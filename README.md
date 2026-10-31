@@ -59,6 +59,10 @@ $ npm run test:cov
 
 ## Deployment
 
+### Render
+
+Use `npm install` as the build environment command, `npm run build` as the build command, and `npm run start:prod` as the start command. The build script does not force a fixed Node.js heap size, allowing Node.js to size its heap for the memory available to the Render instance. Remove any `NODE_OPTIONS` heap override from the Render environment if one is set.
+
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
 
 If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
